@@ -1,37 +1,37 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Award, ExternalLink } from "lucide-react";
+import { Award, ExternalLink, Linkedin } from "lucide-react";
 import TiltCard from "./TiltCard";
 import Magnetic from "./Magnetic";
 
 const CERTIFICATIONS = [
   {
     id: "cert-1",
-    name: "[Certification Name: Advanced React Patterns]",
-    issuer: "[Issuing Body: Frontend Masters / Authority]",
+    name: "Third: National Level Face Recognition System Event",
+    issuer: "Indian Institute of Technology Indore",
     colorTheme: "bg-c1-bg border-c1-border",
     textColor: "text-c1-text"
   },
   {
     id: "cert-2",
-    name: "[Certification Name: UI/UX Interaction Design]",
-    issuer: "[Issuing Body: Interaction Design Foundation]",
-    colorTheme: "bg-c2-bg border-c2-border",
-    textColor: "text-c2-text"
+    name: "Semi-Finalist: ET-AI Hackathon 2026",
+    issuer: "The Economic Times Digital",
+    colorTheme: "bg-c4-bg border-c4-border",
+    textColor: "text-c4-text"
   },
   {
     id: "cert-3",
-    name: "[Certification Name: Web Performance & Core Vitals]",
-    issuer: "[Issuing Body: Google Developers / Udacity]",
+    name: "Ideathon Winner: SPACEVITA",
+    issuer: "VIT Bhopal University",
     colorTheme: "bg-c3-bg border-c3-border",
     textColor: "text-c3-text"
   },
   {
     id: "cert-4",
-    name: "[Certification Name: Algorithms & Data Structures]",
-    issuer: "[Issuing Body: freeCodeCamp]",
-    colorTheme: "bg-c4-bg border-c4-border",
-    textColor: "text-c4-text"
+    name: "Insights on Computational Data Science",
+    issuer: "Indiana University",
+    colorTheme: "bg-c2-bg border-c2-border",
+    textColor: "text-c2-text"
   }
 ];
 
@@ -70,9 +70,20 @@ export default function Certifications() {
               Certifications
             </h2>
           </div>
-          <p className="font-body text-sm text-text-main/50 mt-4 md:mt-0 max-w-xs md:text-right leading-relaxed">
-            [Verification of professional knowledge paths and interactive technical courses.]
-          </p>
+          <div className="mt-4 md:mt-0">
+            <Magnetic range={20}>
+              <a
+                href="https://www.linkedin.com/in/sarvyagyaprakash/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="interactive flex items-center justify-center space-x-2 w-44 bg-accent-main text-bg-main px-6 py-3.5 rounded-full font-body text-xs font-bold uppercase tracking-wider hover:opacity-90 transition-opacity"
+                data-cursor-type="link"
+              >
+                <Linkedin size={16} />
+                <span>View LinkedIn</span>
+              </a>
+            </Magnetic>
+          </div>
         </div>
 
         {/* Certifications Grid */}

@@ -188,7 +188,7 @@ export default function Hero() {
       >
         <div className="flex flex-col items-center">
           <div className="relative inline-block font-display text-3xl md:text-5xl font-extrabold text-accent-main">
-            <CountUpNumber value="[5]" />
+            <CountUpNumber value="[7]" />
             <span className="absolute left-full top-0 ml-0.5">+</span>
           </div>
           <p className="font-body text-[10px] md:text-xs font-semibold uppercase tracking-wider text-text-main/50 mt-1">
@@ -197,7 +197,7 @@ export default function Hero() {
         </div>
         <div className="flex flex-col items-center">
           <div className="relative inline-block font-display text-3xl md:text-5xl font-extrabold text-accent-main">
-            <CountUpNumber value="[5]" />
+            <CountUpNumber value="[10]" />
             <span className="absolute left-full top-0 ml-0.5">+</span>
           </div>
           <p className="font-body text-[10px] md:text-xs font-semibold uppercase tracking-wider text-text-main/50 mt-1">

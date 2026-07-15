@@ -3,27 +3,28 @@ import { motion } from "framer-motion";
 import { Mail, Linkedin, Github, ArrowUp } from "lucide-react";
 import Magnetic from "./Magnetic";
 
-const LeetcodeIcon = (props) => (
+const LeetcodeIcon = ({ size, ...props }) => (
   <svg
-    viewBox="0 0 24 24"
-    width="1em"
-    height="1em"
-    stroke="currentColor"
-    strokeWidth="2"
+    viewBox="0 0 48 48"
+    width={size}
+    height={size}
     fill="none"
+    stroke="currentColor"
+    strokeWidth="3.8"
     strokeLinecap="round"
     strokeLinejoin="round"
     {...props}
   >
-    <path d="M16.102 17.93l-2.69 2.607c-.466.451-1.211.451-1.677 0L5.32 14.214a1.21 1.21 0 0 1 0-1.688L15.3 2.397c.465-.45 1.21-.45 1.676 0l2.69 2.607c.466.452.466 1.18 0 1.631L11.59 14.34a.403.403 0 0 0 0 .563l1.82 1.76a.403.403 0 0 0 .564 0l5.864-5.678" />
-    <path d="M9 13h9" />
+    <path d="M33.8092 34.8772L26.8725 41.814A5.7258 5.7258 0 0118.7571 41.814L8.6127 31.67A5.726 5.726 0 018.6127 23.5545L18.7571 13.41A5.7258 5.7258 0 0126.8725 13.41L34.5 21.0373" />
+    <path d="M18.7571 13.41L27.7647 4.5" />
+    <path d="M19.5838 27.5918H41.0738" />
   </svg>
 );
 
 const SOCIAL_LINKS = [
-  { icon: Linkedin, href: "#linkedin-placeholder", label: "LinkedIn" },
-  { icon: Github, href: "#github-placeholder", label: "GitHub" },
-  { icon: LeetcodeIcon, href: "#leetcode-placeholder", label: "LeetCode" }
+  { icon: Linkedin, href: "https://www.linkedin.com/in/sarvyagyaprakash/", label: "LinkedIn", size: 25 },
+  { icon: Github, href: "https://github.com/SarvyagyaPrakash", label: "GitHub", size: 25 },
+  { icon: LeetcodeIcon, href: "https://leetcode.com/u/kZOu8cIz2v/", label: "LeetCode", size: 35 }
 ];
 
 export default function Connect() {
@@ -72,12 +73,14 @@ export default function Connect() {
                 <Magnetic key={link.label} range={20}>
                   <a
                     href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     aria-label={link.label}
-                    className="interactive flex items-center justify-center w-12 h-12 rounded-full border border-card-border bg-card-bg text-text-main hover:text-accent-main hover:border-accent-main transition-colors duration-300"
+                    className="interactive flex items-center justify-center w-[57.6px] h-[57.6px] rounded-full border border-card-border bg-card-bg text-text-main hover:text-accent-main hover:border-accent-main transition-colors duration-300"
                     data-cursor-type="link"
                   >
                     <motion.div whileHover={{ scale: 1.1, rotate: 5 }}>
-                      <IconComponent size={18} />
+                      <IconComponent size={link.size} />
                     </motion.div>
                   </a>
                 </Magnetic>
