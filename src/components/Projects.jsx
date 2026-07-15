@@ -3,24 +3,26 @@ import { motion } from "framer-motion";
 import { ExternalLink, Github } from "lucide-react";
 import TiltCard from "./TiltCard";
 import Magnetic from "./Magnetic";
+import medicalRagImg from "../assets/medical-rag.png";
+import moneyMentorImg from "../assets/money-mentor.png";
+import agentGridImg from "../assets/agent-grid.jpg";
 
 const PROJECTS = [
   {
     id: "featured-1",
     isFeatured: true,
-    title: "[Featured Project: E-Commerce Grid]",
-    desc: "[A highly performant, custom-grid layout shop interface utilizing React Server Components, customized layout transitions, and server-side state synchronizations.]",
-    tags: ["React", "Next.js", "Tailwind CSS", "Zustand"],
+    title: "AgentGrid",
+    desc: "An edge-native, privacy-preserving video intelligence platform that mirrors enterprise split-AI architectures. Instead of streaming continuous high-bandwidth video to the cloud, AgentGrid processes raw video feeds locally at the edge (on-site) forwarding only structured JSON metadata events to a central cloud dashboard.",
+    tags: ["Docker", "Redis", "YOLOv8", "PostgreSQL"],
     demoLink: "#demo-link",
     githubLink: "#git-link",
     // Custom abstract graphic markup
     graphic: (
-      <svg viewBox="0 0 400 250" className="w-full h-full object-cover text-text-main/5 bg-divider/20">
-        <circle cx="150" cy="120" r="80" fill="currentColor" opacity="0.3" />
-        <rect x="200" y="80" width="120" height="120" fill="currentColor" opacity="0.2" rx="10" />
-        <line x1="50" y1="50" x2="350" y2="200" stroke="currentColor" strokeWidth="2" strokeDasharray="8 4" />
-        <text x="50" y="220" fontFamily="Syne" fontSize="16" fontWeight="bold" className="fill-accent-main opacity-60">GRID.OS</text>
-      </svg>
+      <img
+        src={agentGridImg}
+        alt="AgentGrid"
+        className="w-full h-full object-cover"
+      />
     )
   },
   {
@@ -44,37 +46,34 @@ const PROJECTS = [
   {
     id: "project-3",
     isFeatured: false,
-    title: "[Project Name: Morphing Vector API]",
-    desc: "[A service to dynamically generate and animate SVG morph shapes via URL queries, optimized for high concurrency serverless workers.]",
-    tags: ["Node.js", "Serverless", "Wasm", "SVG"],
+    title: "MoneyMentor Pro",
+    desc: "An accessible, highly friendly, and extremely powerful Open-Source AI Portfolio Mentor.",
+    tags: ["LangGraph", "streamlit", "Pyxirr"],
     demoLink: "#demo-link",
     githubLink: "#git-link",
     graphic: (
-      <svg viewBox="0 0 300 200" className="w-full h-full object-cover text-text-main/5 bg-divider/20">
-        <path d="M 70,100 C 70,50 120,40 150,60 C 180,80 230,60 230,100 C 230,150 170,160 150,140 C 120,120 70,150 70,100 Z" fill="currentColor" opacity="0.25" />
-        <line x1="150" y1="20" x2="150" y2="180" stroke="currentColor" strokeWidth="0.5" strokeDasharray="4" />
-        <line x1="30" y1="100" x2="270" y2="100" stroke="currentColor" strokeWidth="0.5" strokeDasharray="4" />
-        <text x="40" y="40" fontFamily="Syne" fontSize="12" fontWeight="bold" className="fill-accent-main opacity-60">SHP.API</text>
-      </svg>
+      <img
+        src={moneyMentorImg}
+        alt="MoneyMentor Pro"
+        className="w-full h-full object-cover scale-[1.08]"
+      />
     )
   },
   {
     id: "project-4",
     isFeatured: false,
-    title: "[Project Name: Spatial Audio Deck]",
-    desc: "[A spatial Web Audio synthesizer deck that positions tracks in virtual 3D space based on mouse gestures, featuring custom fluid nodes.]",
-    tags: ["React", "Web Audio API", "Three.js"],
+    title: "Medical RAG Chatbot",
+    desc: "A local-first Retrieval-Augmented Generation (RAG) chatbot for medical PDFs.",
+    tags: ["FastAPI", "Ollama", "ChromaDB"],
     demoLink: "#demo-link",
     githubLink: "#git-link",
     graphic: (
-      <svg viewBox="0 0 300 200" className="w-full h-full object-cover text-text-main/5 bg-divider/20">
-        <circle cx="150" cy="100" r="60" fill="none" stroke="currentColor" strokeWidth="1" strokeDasharray="2 2" />
-        <circle cx="150" cy="100" r="40" fill="none" stroke="currentColor" strokeWidth="1" />
-        <circle cx="150" cy="100" r="10" fill="currentColor" opacity="0.3" />
-        <circle cx="210" cy="70" r="6" fill="currentColor" className="text-accent-main" />
-        <text x="210" y="55" fontFamily="Syne" fontSize="10" fontWeight="bold" className="fill-accent-main opacity-60">NODE.01</text>
-      </svg>
-    )
+      <img
+        src={medicalRagImg}
+        alt="Medical RAG Chatbot"
+        className="w-full h-full object-cover scale-[1.08]"
+      />
+    ) 
   }
 ];
 
@@ -102,7 +101,7 @@ export default function Projects() {
       className="py-24 md:py-36 px-6 md:px-12 bg-bg-main border-b border-divider"
     >
       <div className="max-w-7xl mx-auto space-y-16">
-        
+
         {/* Header Block */}
         <div className="flex flex-col md:flex-row md:items-end justify-between border-b border-divider pb-8">
           <div>
@@ -225,7 +224,7 @@ export default function Projects() {
                   >
                     <div className="space-y-4">
                       {/* Graphics Area */}
-                      <div className="h-44 rounded-2xl overflow-hidden border border-card-border relative">
+                      <div className="aspect-[3/2] w-full rounded-2xl overflow-hidden border border-card-border relative">
                         {project.graphic}
                       </div>
 

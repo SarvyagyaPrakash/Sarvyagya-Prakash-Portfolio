@@ -140,11 +140,11 @@ export default function App() {
               className="text-center space-y-4"
             >
               <h2 className="font-display text-4xl md:text-5xl font-extrabold tracking-tight">
-                SP
+                Sarvyagya Prakash
               </h2>
               <div className="w-12 h-[1.5px] bg-[#C5B097]/40 mx-auto" />
-              <p className="font-body text-[9px] uppercase tracking-widest text-[#E8E4DC]/40">
-                Creative Portfolio
+              <p className="font-body text-[14px] uppercase tracking-widest text-[#E8E4DC]/40">
+                Welcome
               </p>
             </motion.div>
           </motion.div>

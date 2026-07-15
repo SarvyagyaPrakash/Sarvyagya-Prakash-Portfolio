@@ -45,7 +45,7 @@ export default function Connect() {
             Let's Connect
           </h2>
           <p className="font-body text-sm md:text-base text-text-main/60 max-w-sm leading-relaxed pt-2">
-            [Short message inviting people to reach out: I'm currently looking for new opportunities and collaborations. Drop me a line if you want to chat about front-end engineering, interactive UI, or just say hi.]
+            Always ready to consider new openings, technical collaborations, or anything regarding system architecture. Feel free to reach out if you wish to discuss AI Agents, backend development, user interfaces, or simply say hello!
           </p>
         </div>
 
@@ -55,7 +55,7 @@ export default function Connect() {
           {/* Email Me CTA Button */}
           <Magnetic range={25}>
             <a
-              href="mailto:placeholder@example.com"
+              href="mailto:prakash.sarvyagya@gmail.com"
               className="interactive flex items-center space-x-3 bg-accent-main text-bg-main px-8 py-5 rounded-full font-body text-sm font-bold uppercase tracking-wider hover:opacity-90 transition-opacity shadow-sm"
               data-cursor-type="link"
             >
@@ -96,9 +96,6 @@ export default function Connect() {
           <span className="font-display text-lg font-extrabold tracking-tight text-text-main">
             SP
           </span>
-          <p className="font-body text-[10px] font-semibold text-text-main/40 uppercase tracking-widest">
-            © {currentYear} Sarvyagya Prakash. Built with ❤️ and React.
-          </p>
         </div>
 
         {/* Back to Top */}
