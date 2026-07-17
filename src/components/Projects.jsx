@@ -6,6 +6,7 @@ import Magnetic from "./Magnetic";
 import medicalRagImg from "../assets/medical-rag.png";
 import moneyMentorImg from "../assets/money-mentor.png";
 import agentGridImg from "../assets/agent-grid.jpg";
+import exigentCxImg from "../assets/exigentcx.png";
 
 const PROJECTS = [
   {
@@ -13,9 +14,9 @@ const PROJECTS = [
     isFeatured: true,
     title: "AgentGrid",
     desc: "An edge-native, privacy-preserving video intelligence platform that mirrors enterprise split-AI architectures. Instead of streaming continuous high-bandwidth video to the cloud, AgentGrid processes raw video feeds locally at the edge (on-site) forwarding only structured JSON metadata events to a central cloud dashboard.",
-    tags: ["Docker", "Redis", "YOLOv8", "PostgreSQL"],
-    demoLink: "#demo-link",
-    githubLink: "#git-link",
+    tags: ["Docker", "Redis", "YOLO-v8", "PostgreSQL"],
+    demoLink: "https://agent-grid-two.vercel.app",
+    githubLink: "https://github.com/SarvyagyaPrakash/AgentGrid",
     // Custom abstract graphic markup
     graphic: (
       <img
@@ -28,19 +29,17 @@ const PROJECTS = [
   {
     id: "project-2",
     isFeatured: false,
-    title: "[Project Name: Editorial Reader]",
-    desc: "[An experimental web-based reader tailored for long-form editorial essays, with fluid typography scales, custom key bindings, and reading analytics.]",
-    tags: ["TypeScript", "Vite", "CSS Grid", "Canvas"],
-    demoLink: "#demo-link",
-    githubLink: "#git-link",
+    title: "ExigentCX",
+    desc: "A secure digital platform connecting high-growth organizations with verified senior executives.",
+    tags: ["React", "Supabase", "Framer Motion"],
+    demoLink: "https://cxo-ten.vercel.app",
+    githubLink: "https://github.com/SarvyagyaPrakash/ExigentCX",
     graphic: (
-      <svg viewBox="0 0 300 200" className="w-full h-full object-cover text-text-main/5 bg-divider/20">
-        <rect x="40" y="40" width="220" height="120" fill="none" stroke="currentColor" strokeWidth="1.5" />
-        <line x1="60" y1="70" x2="240" y2="70" stroke="currentColor" strokeWidth="2" />
-        <line x1="60" y1="95" x2="200" y2="95" stroke="currentColor" strokeWidth="1" />
-        <line x1="60" y1="115" x2="220" y2="115" stroke="currentColor" strokeWidth="1" />
-        <text x="200" y="150" fontFamily="Syne" fontSize="12" fontWeight="bold" className="fill-accent-main opacity-60">TXT.02</text>
-      </svg>
+      <img
+        src={exigentCxImg}
+        alt="ExigentCX"
+        className="w-full h-full object-cover"
+      />
     )
   },
   {
@@ -49,8 +48,8 @@ const PROJECTS = [
     title: "MoneyMentor Pro",
     desc: "An accessible, highly friendly, and extremely powerful Open-Source AI Portfolio Mentor.",
     tags: ["LangGraph", "streamlit", "Pyxirr"],
-    demoLink: "#demo-link",
-    githubLink: "#git-link",
+    demoLink: "https://calyx-et-moneymentor.streamlit.app",
+    githubLink: "https://github.com/SarvyagyaPrakash/MoneyMentor-Pro",
     graphic: (
       <img
         src={moneyMentorImg}
@@ -65,8 +64,8 @@ const PROJECTS = [
     title: "Medical RAG Chatbot",
     desc: "A local-first Retrieval-Augmented Generation (RAG) chatbot for medical PDFs.",
     tags: ["FastAPI", "Ollama", "ChromaDB"],
-    demoLink: "#demo-link",
-    githubLink: "#git-link",
+    demoLink: "https://github.com/SarvyagyaPrakash/RAG-Based-Health-Bot",
+    githubLink: "https://github.com/SarvyagyaPrakash/RAG-Based-Health-Bot",
     graphic: (
       <img
         src={medicalRagImg}
@@ -147,8 +146,13 @@ export default function Projects() {
                 >
                   <TiltCard maxTilt={4} className="w-full">
                     <div
-                      className="interactive p-6 md:p-8 rounded-3xl bg-card-bg border border-card-border grid grid-cols-1 lg:grid-cols-12 gap-8 shadow-sm hover:shadow-lg transition-shadow duration-300"
+                      className="interactive p-6 md:p-8 rounded-3xl bg-card-bg border border-card-border grid grid-cols-1 lg:grid-cols-12 gap-8 shadow-sm hover:shadow-lg transition-shadow duration-300 cursor-pointer"
                       data-cursor-type="view"
+                      onClick={(e) => {
+                        if (project.demoLink.startsWith("http") && !e.target.closest('a')) {
+                          window.open(project.demoLink, "_blank", "noopener,noreferrer");
+                        }
+                      }}
                     >
                       {/* Graphics Area */}
                       <div className="lg:col-span-7 h-64 md:h-80 rounded-2xl overflow-hidden border border-card-border relative">
@@ -181,10 +185,15 @@ export default function Projects() {
                         </div>
 
                         {/* Project Actions */}
-                        <div className="flex space-x-6 pt-6 border-t border-divider mt-6">
+                        <div className="flex items-center justify-between pt-6 border-t border-divider mt-6">
                           <Magnetic range={15}>
                             <a
                               href={project.demoLink}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              onClick={(e) => {
+                                e.stopPropagation();
+                              }}
                               className="interactive flex items-center space-x-2 font-body text-xs font-bold uppercase tracking-wider text-accent-main hover:opacity-80 transition-opacity"
                               data-cursor-type="link"
                             >
@@ -195,10 +204,15 @@ export default function Projects() {
                           <Magnetic range={15}>
                             <a
                               href={project.githubLink}
-                              className="interactive flex items-center space-x-2 font-body text-xs font-bold uppercase tracking-wider text-text-main/50 hover:text-text-main transition-colors"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              onClick={(e) => {
+                                e.stopPropagation();
+                              }}
+                              className="interactive flex items-center space-x-2.5 font-body text-xs font-bold uppercase tracking-wider px-4 py-2 rounded-full border-2 border-amber-500/60 hover:border-amber-500 text-text-main/70 hover:text-text-main hover:bg-amber-500/5 transition-all duration-300"
                               data-cursor-type="link"
                             >
-                              <Github size={14} />
+                              <Github size={16} />
                               <span>GitHub</span>
                             </a>
                           </Magnetic>
@@ -219,8 +233,13 @@ export default function Projects() {
               >
                 <TiltCard maxTilt={8} className="h-full">
                   <div
-                    className="interactive p-5 rounded-3xl bg-card-bg border border-card-border flex flex-col justify-between h-full shadow-sm hover:shadow-lg transition-shadow duration-300"
+                    className="interactive p-5 rounded-3xl bg-card-bg border border-card-border flex flex-col justify-between h-full shadow-sm hover:shadow-lg transition-shadow duration-300 cursor-pointer"
                     data-cursor-type="view"
+                    onClick={(e) => {
+                      if (project.demoLink.startsWith("http") && !e.target.closest('a')) {
+                        window.open(project.demoLink, "_blank", "noopener,noreferrer");
+                      }
+                    }}
                   >
                     <div className="space-y-4">
                       {/* Graphics Area */}
@@ -257,6 +276,11 @@ export default function Projects() {
                         <Magnetic range={15}>
                           <a
                             href={project.demoLink}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            onClick={(e) => {
+                              e.stopPropagation();
+                            }}
                             className="interactive flex items-center space-x-1.5 font-body text-[10px] font-bold uppercase tracking-wider text-accent-main hover:opacity-85 transition-opacity"
                             data-cursor-type="link"
                           >
@@ -267,10 +291,15 @@ export default function Projects() {
                         <Magnetic range={15}>
                           <a
                             href={project.githubLink}
-                            className="interactive text-text-main/40 hover:text-text-main transition-colors"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            onClick={(e) => {
+                              e.stopPropagation();
+                            }}
+                            className="interactive flex items-center justify-center p-2.5 rounded-full border-2 border-amber-500/60 hover:border-amber-500 text-text-main/70 hover:text-text-main hover:bg-amber-500/5 transition-all duration-300"
                             data-cursor-type="link"
                           >
-                            <Github size={14} />
+                            <Github size={18} />
                           </a>
                         </Magnetic>
                       </div>
