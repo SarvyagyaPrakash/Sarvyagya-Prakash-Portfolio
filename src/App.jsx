@@ -144,7 +144,7 @@ export default function App() {
               </h2>
               <div className="w-12 h-[1.5px] bg-[#C5B097]/40 mx-auto" />
               <p className="font-body text-[14px] uppercase tracking-widest text-[#E8E4DC]/40">
-                Welcome
+                Welcome's you
               </p>
             </motion.div>
           </motion.div>

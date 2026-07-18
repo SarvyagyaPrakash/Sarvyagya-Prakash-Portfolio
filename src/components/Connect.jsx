@@ -97,7 +97,7 @@ export default function Connect() {
         {/* Initials & Copyright */}
         <div className="flex flex-col items-center md:items-start space-y-2">
           <span className="font-display text-lg font-extrabold tracking-tight text-text-main">
-            SP
+            Bhopal, India
           </span>
         </div>
 
