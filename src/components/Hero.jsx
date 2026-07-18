@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence, useInView } from "framer-motion";
 import { ArrowRight, FileUser } from "lucide-react";
 import Magnetic from "./Magnetic";
+import profileImg from "../assets/profile.jpg";
 
 const TAGLINES = [
   "Passionate about making AI practical, private, and inclusive for everyone.",
@@ -164,7 +165,7 @@ export default function Hero() {
           {/* Interactive Tilt Portrait Frame */}
           <div className="relative z-10 w-72 h-72 md:w-80 md:h-80 overflow-hidden organic-border border-4 border-bg-main shadow-xl bg-card-bg">
             <img
-              src="/src/assets/profile.jpg"
+              src={profileImg}
               alt="Sarvyagya Prakash Portrait"
               className="w-full h-full object-cover scale-105 hover:scale-110 transition-transform duration-700"
               onError={(e) => {
