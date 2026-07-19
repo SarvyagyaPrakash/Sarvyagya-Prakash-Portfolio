@@ -103,7 +103,7 @@ export default function Hero() {
             </h1>
 
             {/* Tagline Rotation Container with fixed height to prevent layout shifts */}
-            <div className="h-10 md:h-12 overflow-hidden flex items-center">
+            <div className="h-20 sm:h-16 md:h-12 overflow-hidden flex items-center">
               <AnimatePresence mode="wait">
                 <motion.div
                   key={taglineIndex}
@@ -160,10 +160,10 @@ export default function Hero() {
           className="lg:col-span-5 flex justify-center items-center relative"
         >
           {/* Animated Accent Backing Shape */}
-          <div className="absolute inset-0 bg-accent-main/20 organic-border w-72 h-72 md:w-80 md:h-80 -rotate-6 z-0" />
+          <div className="absolute inset-0 bg-accent-main/20 organic-border w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 -rotate-6 z-0" />
 
           {/* Interactive Tilt Portrait Frame */}
-          <div className="relative z-10 w-72 h-72 md:w-80 md:h-80 overflow-hidden organic-border border-4 border-bg-main shadow-xl bg-card-bg">
+          <div className="relative z-10 w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 overflow-hidden organic-border border-4 border-bg-main shadow-xl bg-card-bg">
             <img
               src={profileImg}
               alt="Sarvyagya Prakash Portrait"

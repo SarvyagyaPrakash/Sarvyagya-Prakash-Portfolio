@@ -164,7 +164,7 @@ export default function About() {
                     <div className="p-3 bg-accent-main/10 rounded-xl text-accent-main group-hover:scale-110 transition-transform duration-300">
                       <IconComp size={20} />
                     </div>
-                    <h4 className="font-display text-base font-bold text-text-main min-h-[3rem]">
+                    <h4 className="font-display text-base font-bold text-text-main md:min-h-[3rem] min-h-0">
                       {spec.area}
                     </h4>
                     <p className="font-body text-xs text-text-main/60 leading-relaxed text-justify">
