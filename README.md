@@ -4,7 +4,7 @@
     <strong>Software Developer & AI Enthusiast</strong>
   </p>
   <p>
-    <a href="https://drive.google.com/file/d/1P7PkdkoA0kzlqjkRIodfXE57_NprIxYh/view?usp=sharing" target="_blank">Resume</a> ·
+    <a href="https://drive.google.com/file/d/1fivd1CBoMP1ayJPw79xyNPHSCDFe14-A/view?usp=sharing" target="_blank">Resume</a> ·
     <a href="mailto:hi@sarv.cc">Email</a> ·
     <a href="https://linkedin.com/in/sarvyagya" target="_blank">LinkedIn</a> ·
     <a href="https://github.com/sarvyagya" target="_blank">GitHub</a> ·
@@ -129,7 +129,7 @@ npm run lint
 
 ## 📄 Resume
 
-[View my resume](https://drive.google.com/file/d/1P7PkdkoA0kzlqjkRIodfXE57_NprIxYh/view?usp=sharing) — also accessible via the **Resume** button in the Hero section.
+[View my resume](https://drive.google.com/file/d/1fivd1CBoMP1ayJPw79xyNPHSCDFe14-A/view?usp=sharing) — also accessible via the **Resume** button in the Hero section.
 
 ## 🤝 Connect
 

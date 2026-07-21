@@ -139,7 +139,7 @@ export default function Hero() {
 
             <Magnetic range={20}>
               <a
-                href="https://drive.google.com/file/d/1P7PkdkoA0kzlqjkRIodfXE57_NprIxYh/view?usp=sharing"
+                href="https://drive.google.com/file/d/1fivd1CBoMP1ayJPw79xyNPHSCDFe14-A/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="interactive flex items-center justify-center space-x-2 w-44 border border-card-border text-text-main hover:bg-card-border/10 px-6 py-3.5 rounded-full font-body text-xs font-bold uppercase tracking-wider transition-colors"
