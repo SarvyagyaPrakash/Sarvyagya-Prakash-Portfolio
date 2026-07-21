@@ -10,28 +10,32 @@ const CERTIFICATIONS = [
     name: "Third: National Level Face Recognition System Event",
     issuer: "Indian Institute of Technology Indore",
     colorTheme: "bg-c1-bg border-c1-border",
-    textColor: "text-c1-text"
+    textColor: "text-c1-text",
+    link: "https://www.linkedin.com/posts/activity-7311839960569995264-RYtW?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEpr5I8BsQKbl6ctbakWyDciSJmYKXkbIwo"
   },
   {
     id: "cert-2",
     name: "Semi-Finalist: ET-AI Hackathon 2026",
     issuer: "The Economic Times Digital",
     colorTheme: "bg-c4-bg border-c4-border",
-    textColor: "text-c4-text"
+    textColor: "text-c4-text",
+    link: "https://www.linkedin.com/posts/activity-7459658896601894914-1eNj?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEpr5I8BsQKbl6ctbakWyDciSJmYKXkbIwo"
   },
   {
     id: "cert-3",
     name: "Ideathon Winner: SPACEVITA",
     issuer: "VIT Bhopal University",
     colorTheme: "bg-c3-bg border-c3-border",
-    textColor: "text-c3-text"
+    textColor: "text-c3-text",
+    link: "https://www.linkedin.com/posts/activity-7250715903753945088-qlfE?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEpr5I8BsQKbl6ctbakWyDciSJmYKXkbIwo"
   },
   {
     id: "cert-4",
-    name: "Insights on Computational Data Science",
-    issuer: "Indiana University",
+    name: "Top 83: Pragati AI for Impact Hackathon 2025",
+    issuer: "The/Nudge, Meta, E2E Cloud, and Hack2skill",
     colorTheme: "bg-c2-bg border-c2-border",
-    textColor: "text-c2-text"
+    textColor: "text-c2-text",
+    link: "https://www.linkedin.com/posts/activity-7320491878011879425-flVB?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEpr5I8BsQKbl6ctbakWyDciSJmYKXkbIwo"
   }
 ];
 
@@ -101,8 +105,11 @@ export default function Certifications() {
               className="h-full"
             >
               <TiltCard maxTilt={5} className="h-full">
-                <div
-                  className={`interactive relative group p-6 rounded-3xl border flex flex-col justify-between h-full transition-all duration-300 ${cert.colorTheme} shadow-sm hover:shadow-md`}
+                <a
+                  href={cert.link}
+                  target={cert.link !== "#" ? "_blank" : "_self"}
+                  rel="noopener noreferrer"
+                  className={`interactive relative group p-6 rounded-3xl border flex flex-col justify-between h-full transition-all duration-300 ${cert.colorTheme} shadow-sm hover:shadow-md block`}
                   data-cursor-type="link"
                 >
                   <div className="flex items-start justify-between space-x-4 mb-8">
@@ -128,7 +135,7 @@ export default function Certifications() {
 
                   {/* Absolute visual border overlay that fades in on hover */}
                   <div className="absolute inset-0 rounded-3xl border-2 border-accent-main opacity-0 group-hover:opacity-20 transition-opacity duration-300 pointer-events-none" />
-                </div>
+                </a>
               </TiltCard>
             </motion.div>
           ))}
