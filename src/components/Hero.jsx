@@ -14,13 +14,12 @@ const TAGLINES = [
 function CountUpNumber({ value, duration = 1.5 }) {
   const [count, setCount] = useState(0);
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-100px" });
+  const isInView = useInView(ref, { once: true, amount: 0.1 });
 
   useEffect(() => {
     if (!isInView) return;
     
-    let start = 0;
-    // Extract numbers from placeholders like "[10]" or just "10"
+    // Extract numbers from target string (e.g., "[7]", "7", or "[10]")
     const numberStr = String(value).replace(/[^0-9]/g, "");
     const end = parseInt(numberStr, 10) || 0;
     if (end === 0) {
@@ -28,7 +27,7 @@ function CountUpNumber({ value, duration = 1.5 }) {
       return;
     }
 
-    const totalSteps = 60;
+    const totalSteps = 45;
     const stepTime = (duration * 1000) / totalSteps;
     let step = 0;
 
@@ -36,16 +35,11 @@ function CountUpNumber({ value, duration = 1.5 }) {
       step++;
       const current = Math.floor((end * step) / totalSteps);
       
-      // Put the formatted string back (preserving brackets if any, or just outputting raw count)
-      if (typeof value === "string" && value.includes("[")) {
-        setCount(value.replace(/[0-9]+/, current));
-      } else {
-        setCount(current);
-      }
+      setCount(current);
 
       if (step >= totalSteps) {
         clearInterval(timer);
-        setCount(value); // Ensure precise ending
+        setCount(end); // Ensure exact final count
       }
     }, stepTime);
 
@@ -189,7 +183,7 @@ export default function Hero() {
       >
         <div className="flex flex-col items-center">
           <div className="relative inline-block font-display text-3xl md:text-5xl font-extrabold text-accent-main">
-            <CountUpNumber value="[7]" />
+            <CountUpNumber value="7" />
             <span className="absolute left-full top-0 ml-0.5">+</span>
           </div>
           <p className="font-body text-[10px] md:text-xs font-semibold uppercase tracking-wider text-text-main/50 mt-1">
@@ -198,7 +192,7 @@ export default function Hero() {
         </div>
         <div className="flex flex-col items-center">
           <div className="relative inline-block font-display text-3xl md:text-5xl font-extrabold text-accent-main">
-            <CountUpNumber value="[10]" />
+            <CountUpNumber value="10" />
             <span className="absolute left-full top-0 ml-0.5">+</span>
           </div>
           <p className="font-body text-[10px] md:text-xs font-semibold uppercase tracking-wider text-text-main/50 mt-1">
@@ -207,7 +201,7 @@ export default function Hero() {
         </div>
         <div className="flex flex-col items-center">
           <div className="relative inline-block font-display text-3xl md:text-5xl font-extrabold text-accent-main">
-            <CountUpNumber value="[2]" />
+            <CountUpNumber value="2" />
             <span className="absolute left-full top-0 ml-0.5">+</span>
           </div>
           <p className="font-body text-[10px] md:text-xs font-semibold uppercase tracking-wider text-text-main/50 mt-1">
