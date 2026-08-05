@@ -1,3 +1,4 @@
+<a id="home"></a>
 <div align="center">
 
 # 👋 Hey, I'm **Sarvyagya Prakash**
@@ -7,15 +8,15 @@
 ---
 
 [![Portfolio](https://img.shields.io/badge/🌐_Portfolio-sarv.cc-0891B2?style=for-the-badge&logo=googlechrome&logoColor=white)](https://sarv.cc)
-[![Resume](https://img.shields.io/badge/📄_Resume-View_Download-059669?style=for-the-badge&logo=readthedocs&logoColor=white)](https://drive.google.com/file/d/1fivd1CBoMP1ayJPw79xyNPHSCDFe14-A/view?usp=sharing)
-[![Email](https://img.shields.io/badge/✉️_Email-Hi_Click_Here-EA580C?style=for-the-badge&logo=gmail&logoColor=white)](mailto:hi@sarv.cc)
-[![LinkedIn](https://img.shields.io/badge/💼_LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/sarvyagya)
-[![GitHub](https://img.shields.io/badge/🐙_GitHub-Follow-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/sarvyagya)
-[![LeetCode](https://img.shields.io/badge/⚡_LeetCode-Solve-FFA116?style=for-the-badge&logo=leetcode&logoColor=white)](https://leetcode.com/u/sarvyagya/)
+[![Resume](https://img.shields.io/badge/📄_Resume-View_Download-059669?style=for-the-badge&logo=readthedocs&logoColor=white)](https://drive.google.com/file/d/1P7PkdkoA0kzlqjkRIodfXE57_NprIxYh/view?usp=sharing)
+[![Email](https://img.shields.io/badge/✉️_Email-Hi_Click_Here-EA580C?style=for-the-badge&logo=gmail&logoColor=white)](mailto:prakash.sarvyagya@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/💼_LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/sarvyagyaprakash)
+[![GitHub](https://img.shields.io/badge/🐙_GitHub-Follow-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/SarvyagyaPrakash)
+[![LeetCode](https://img.shields.io/badge/⚡_LeetCode-Solve-FFA116?style=for-the-badge&logo=leetcode&logoColor=white)](https://leetcode.com/u/kZOu8cIz2v/)
 
 <br/>
 
-![Profile Views](https://komarev.com/ghpvc/?username=sarvyagya&color=0891B2&style=flat-square&label=Profile+Views)
+![Profile Views](https://komarev.com/ghpvc/?username=SarvyagyaPrakash&color=0891B2&style=flat-square&label=Profile+Views)
 
 </div>
 
@@ -80,6 +81,7 @@ The hero section is where everything begins. It features:
 
 </details>
 
+<a id="about"></a>
 <details>
 <summary><b>🧑‍💻 About — The Full Story</b></summary>
 <br/>
@@ -103,6 +105,7 @@ A deep dive into who I am beyond the code:
 
 </details>
 
+<a id="skills"></a>
 <details>
 <summary><b>🛠️ Skills & Tools — The Arsenal</b></summary>
 <br/>
@@ -127,6 +130,7 @@ Two continuous marquee tracks scroll in opposite directions, showcasing the full
 
 </details>
 
+<a id="projects"></a>
 <details>
 <summary><b>📂 Projects — What I've Built</b></summary>
 <br/>
@@ -182,6 +186,7 @@ Instead of streaming continuous high-bandwidth video to the cloud, AgentGrid pro
 
 </details>
 
+<a id="certifications"></a>
 <details>
 <summary><b>🏆 Certifications & Achievements</b></summary>
 <br/>
@@ -232,6 +237,7 @@ This portfolio isn't static. It's a **living, breathing experience**:
 
 ---
 
+<a id="connect"></a>
 ## 🤝 Let's Connect
 
 > *Always open to new opportunities, technical collaborations, or conversations about AI, backend development, or user interfaces.*
@@ -240,10 +246,10 @@ This portfolio isn't static. It's a **living, breathing experience**:
 
 | | |
 |:---:|:---:|
-| **📧 Email** | [hi@sarv.cc](mailto:hi@sarv.cc) |
-| **💼 LinkedIn** | [linkedin.com/in/sarvyagya](https://linkedin.com/in/sarvyagya) |
-| **🐙 GitHub** | [github.com/sarvyagya](https://github.com/sarvyagya) |
-| **⚡ LeetCode** | [leetcode.com/u/sarvyagya](https://leetcode.com/u/sarvyagya/) |
+| **📧 Email** | [prakash.sarvyagya@gmail.com](mailto:prakash.sarvyagya@gmail.com) |
+| **💼 LinkedIn** | [linkedin.com/in/sarvyagyaprakash](https://linkedin.com/in/sarvyagyaprakash) |
+| **🐙 GitHub** | [github.com/SarvyagyaPrakash](https://github.com/SarvyagyaPrakash) |
+| **⚡ LeetCode** | [leetcode.com/u/kZOu8cIz2v](https://leetcode.com/u/kZOu8cIz2v/) |
 
 </div>
 
