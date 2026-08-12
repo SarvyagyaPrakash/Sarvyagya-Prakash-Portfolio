@@ -8,7 +8,7 @@
 ---
 
 [![Portfolio](https://img.shields.io/badge/🌐_Portfolio-sarv.cc-0891B2?style=for-the-badge&logo=googlechrome&logoColor=white)](https://sarv.cc)
-[![Resume](https://img.shields.io/badge/📄_Resume-View_Download-059669?style=for-the-badge&logo=readthedocs&logoColor=white)](https://drive.google.com/file/d/1P7PkdkoA0kzlqjkRIodfXE57_NprIxYh/view?usp=sharing)
+[![Resume](https://img.shields.io/badge/📄_Resume-View_Download-059669?style=for-the-badge&logo=readthedocs&logoColor=white)](https://drive.google.com/file/d/1a_iE2CzhZh0ADFiLiuqFF0XLnU1sknij/view?usp=sharing)
 [![Email](https://img.shields.io/badge/✉️_Email-Hi_Click_Here-EA580C?style=for-the-badge&logo=gmail&logoColor=white)](mailto:prakash.sarvyagya@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/💼_LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/sarvyagyaprakash)
 [![GitHub](https://img.shields.io/badge/🐙_GitHub-Follow-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/SarvyagyaPrakash)
